@@ -12,16 +12,22 @@
     <script>
 
         let mystring = [2,6,8,5,9,5,5,92,5,56,6,,6,6,5,6,,6,5,5,6,5,56,56,69];
+        let string = 5;
         var result = 0;
-
-        function Maxvalue(){
+         function Maxvalue(){
+         if(mystring.constructor === Array){  
             for (let i=0; i<mystring.length; i++){
-            if(mystring[i] > result){
+             if(mystring[i] > result){
                 result = mystring[i];
                 }
             }
-        return result;
+          return result;
+          }
+        else{
+            console.log("Value is invalid");
         }
-        Maxvalue();
+    }
+    //    Maxvalue();
+        
     </script>
     </html>
